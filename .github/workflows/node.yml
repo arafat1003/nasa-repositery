@@ -1,12 +1,11 @@
-name:NASA PROJECT CI
-on:
-  push:
+name: Comment when opened
+on:push:
     branches:[master]
-  pull_request:
+   pull_request:
     branches:[master]
 
- jobs:
-  build:
+  jobs:
+   build:
     runs-out:ubuntu-latest
     steps:
      - uses:actions/checkout@v2
