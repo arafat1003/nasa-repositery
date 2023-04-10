@@ -1,17 +1,17 @@
 name: Comment when opened
 on:push:
-    branches:[master]
-   pull_request:
-    branches:[master]
+     branches: [master]
+    pull_request:
+     branches: [master]
 
   jobs:
    build:
-    runs-out:ubuntu-latest
+    runs-out: ubuntu-latest
     steps:
-     - uses:actions/checkout@v2
-     - uses:use Node.js version 19
-       uses:acions/setup-node@2
+     - uses: actions/checkout@v3
+     - uses : use Node.js version 19
+       uses: acions/setup-node@2
        with:
-          node-version:"19"
-     - run:npm install
+         node-version:"19"
+     - run: npm install
      - run: npm run build-component     
