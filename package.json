@@ -1,0 +1,19 @@
+{
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "script":"npm run dev --prefix server",
+    "dev":"npm start --prefix client",
+    "both":"npm run script & npm run dev",
+    "install-server":"npm install --prefix server",
+    "install-client":"npm install --prefix client",
+    "build-component":"npm run build --prefix client",
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
